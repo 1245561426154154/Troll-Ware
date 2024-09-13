@@ -1,0 +1,34 @@
+/* Style for the body */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #0e0e0e; /* Dark futuristic background */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 5px;
+}
+
+/* Style for the object following the mouse */
+.chaser {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, cyan, purple);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 50px rgba(255, 0, 255, 0.8);
+    pointer-events: none;
+    transition: transform 0.1s ease;
+}
